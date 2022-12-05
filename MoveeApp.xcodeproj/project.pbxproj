@@ -10,6 +10,8 @@
 		4A574AB12938F0A000FB98D8 /* InfoCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A574AAF2938F0A000FB98D8 /* InfoCardTableViewCell.swift */; };
 		4A574AB22938F0A000FB98D8 /* InfoCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A574AB02938F0A000FB98D8 /* InfoCardTableViewCell.xib */; };
 		4A574AB42938F2E300FB98D8 /* InfoCardViewUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A574AB32938F2E300FB98D8 /* InfoCardViewUIModel.swift */; };
+		4A73452F293DCAE100FC60A1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A73452D293DCAE100FC60A1 /* SplashViewController.swift */; };
+		4A734530293DCAE100FC60A1 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A73452E293DCAE100FC60A1 /* SplashViewController.xib */; };
 		4ACF929029388A23002FB0E1 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF928E29388A23002FB0E1 /* MoviesViewController.swift */; };
 		4ACF929129388A23002FB0E1 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF928F29388A23002FB0E1 /* MoviesViewController.xib */; };
 		4ACF929329388A2F002FB0E1 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF929229388A2F002FB0E1 /* MoviesViewModel.swift */; };
@@ -64,6 +66,8 @@
 		4A574AAF2938F0A000FB98D8 /* InfoCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardTableViewCell.swift; sourceTree = "<group>"; };
 		4A574AB02938F0A000FB98D8 /* InfoCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCardTableViewCell.xib; sourceTree = "<group>"; };
 		4A574AB32938F2E300FB98D8 /* InfoCardViewUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardViewUIModel.swift; sourceTree = "<group>"; };
+		4A73452D293DCAE100FC60A1 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4A73452E293DCAE100FC60A1 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		4ACF928E29388A23002FB0E1 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		4ACF928F29388A23002FB0E1 /* MoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
 		4ACF929229388A2F002FB0E1 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
@@ -153,6 +157,15 @@
 				4A574AB02938F0A000FB98D8 /* InfoCardTableViewCell.xib */,
 			);
 			path = MoviesTableViewCell;
+			sourceTree = "<group>";
+		};
+		4A73452C293DCABE00FC60A1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				4A73452D293DCAE100FC60A1 /* SplashViewController.swift */,
+				4A73452E293DCAE100FC60A1 /* SplashViewController.xib */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		4ACF92882938895C002FB0E1 /* Components */ = {
@@ -295,6 +308,7 @@
 				4ACF92CF2938C01C002FB0E1 /* Api Operation */,
 				4ACF929A29388BB7002FB0E1 /* DesignGuide */,
 				4ACF92882938895C002FB0E1 /* Components */,
+				4A73452C293DCABE00FC60A1 /* Splash */,
 				4ACF92892938896B002FB0E1 /* TabBar */,
 				4ACF928A29388971002FB0E1 /* Movies */,
 				4ACF928B29388978002FB0E1 /* Series */,
@@ -456,6 +470,7 @@
 				4ACF92AE29389957002FB0E1 /* InfoCard.xib in Resources */,
 				4AD03269293647530062C39F /* LaunchScreen.storyboard in Resources */,
 				4ACF929129388A23002FB0E1 /* MoviesViewController.xib in Resources */,
+				4A734530293DCAE100FC60A1 /* SplashViewController.xib in Resources */,
 				4A574AB22938F0A000FB98D8 /* InfoCardTableViewCell.xib in Resources */,
 				4ACF92CB2938BA5F002FB0E1 /* InformationView.xib in Resources */,
 				4AD03266293647530062C39F /* Assets.xcassets in Resources */,
@@ -601,6 +616,7 @@
 				4ACF92B0293899FB002FB0E1 /* UIViewExtension.swift in Sources */,
 				4ACF929329388A2F002FB0E1 /* MoviesViewModel.swift in Sources */,
 				4A574AB42938F2E300FB98D8 /* InfoCardViewUIModel.swift in Sources */,
+				4A73452F293DCAE100FC60A1 /* SplashViewController.swift in Sources */,
 				4AF1E6B02939E8B100EB5010 /* UIImageViewExtension.swift in Sources */,
 				4ACF929929388B46002FB0E1 /* TabBarBuilder.swift in Sources */,
 				4ACF929D29388D83002FB0E1 /* SeriesViewController.swift in Sources */,

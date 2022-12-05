@@ -16,13 +16,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else {return}
         
-        let viewController = TabBarViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let viewController = SplashViewController()
 //        navigationController.setNavigationBarHidden(true, animated: false)
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = navigationController
+        window.rootViewController = viewController
         self.window = window
         window.makeKeyAndVisible()
+        UIApplication.setWindow(window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
