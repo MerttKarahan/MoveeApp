@@ -9,10 +9,10 @@ import UIKit
 
 class MoviesViewController: UIViewController {
     
-    @IBOutlet weak var movieTitleLabel: UILabel!
-    @IBOutlet weak var movieTitleBackgrounView: UIView!
-    @IBOutlet weak var popularMovieTableView: UITableView!
-    @IBOutlet weak var responseTitleLabel: UILabel!
+    @IBOutlet private weak var movieTitleLabel: UILabel!
+    @IBOutlet private weak var movieTitleBackgrounView: UIView!
+    @IBOutlet private weak var popularMovieTableView: UITableView!
+    @IBOutlet private weak var responseTitleLabel: UILabel!
     
     var moviesViewModel: MoviesViewModel?
     

@@ -8,14 +8,14 @@
 import UIKit
 final class InfoCard: UIView {
     
-    @IBOutlet weak var originalTitle: UILabel!
-    @IBOutlet weak var posterImage: UIImageView!
-    @IBOutlet weak var genreIds: UILabel!
-    @IBOutlet weak var dateIcon: UIImageView!
-    @IBOutlet weak var releaseDate: UILabel!
-    @IBOutlet weak var voteAverage: UILabel!
-    @IBOutlet weak var voteAverageView: UIView!
-    @IBOutlet weak var starIcon: UIImageView!
+    @IBOutlet private weak var originalTitle: UILabel!
+    @IBOutlet private weak var posterImage: UIImageView!
+    @IBOutlet private weak var genreIds: UILabel!
+    @IBOutlet private weak var dateIcon: UIImageView!
+    @IBOutlet private weak var releaseDate: UILabel!
+    @IBOutlet private weak var voteAverage: UILabel!
+    @IBOutlet private weak var voteAverageView: UIView!
+    @IBOutlet private weak var starIcon: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
