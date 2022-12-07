@@ -11,7 +11,6 @@ import UIKit
 struct MoviesBuilder {
     
     private init() {
-        
     }
     
     static func build() -> UIViewController {

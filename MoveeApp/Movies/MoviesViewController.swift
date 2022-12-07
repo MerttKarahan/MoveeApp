@@ -20,7 +20,9 @@ class MoviesViewController: UIViewController {
         super.viewDidLoad()
         tableViewSetup()
         moviesViewModel?.getPopularMovies()
+        moviesViewModel?.getGenres()
         setTitle()
+        setNavigationBar()
     }
 }
 
@@ -42,6 +44,10 @@ private extension MoviesViewController {
     
     func setTitle() {
         responseTitleLabel.text = "Popular"
+    }
+    
+    func setNavigationBar() {
+        
     }
 }
 

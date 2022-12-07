@@ -56,7 +56,19 @@ class MovieAppOperations{
         }
     }
     
-    func getGenres(finishGetGenres: @escaping((Result<MoviesModelResponse, AFError>) -> Void)) {
+    func getGenres(finishGetGenres: @escaping((Result<GenresModelResponse, AFError>) -> Void)) {
+        let request = AF.request(MovieAPIPaths.genres.fullPath,
+                                 method: .get,
+                                 parameters: APIConstants.api_key,
+                                 encoding: URLEncoding.default,
+                                 headers: nil)
         
+        request.responseDecodable(of: GenresModelResponse.self) {response in
+            if let value = response.value {
+                finishGetGenres(.success(value))
+            } else if let error = response.error {
+                finishGetGenres(.failure(error))
+            }
+        }
     }
 }

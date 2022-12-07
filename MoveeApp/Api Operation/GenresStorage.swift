@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct GenresStorage {
+    static var sharedGenresInstance = GenresStorage()
+    var genresList: [GenresItems] = []
+}

@@ -38,6 +38,7 @@ final class InfoCard: UIView {
     func configure(model: InfoCardViewUIModel) {
         originalTitle.text = model.title
         posterImage.setImage(poster_path: model.poster_image ?? "")
+        genreIds.text = model.subtitle
         voteAverage.text = model.vote_average
         releaseDate.text = model.release_date
         starIcon.image = UIImage(named: model.average_image ?? "")

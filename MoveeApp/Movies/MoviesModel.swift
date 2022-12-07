@@ -20,5 +20,13 @@ struct MoviesModelItem: Decodable {
     var genre_ids: [Int]
     var release_date: String?
     var vote_average: Double
+}
 
+struct GenresModelResponse: Decodable {
+    var genres: [GenresItems]
+}
+
+struct GenresItems: Decodable {
+    var id: Int?
+    var name: String?
 }
