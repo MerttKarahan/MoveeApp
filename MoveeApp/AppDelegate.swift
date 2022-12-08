@@ -10,10 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+        window.rootViewController = SplashViewController()
+        self.window = window
+        
         return true
     }
 
@@ -30,7 +36,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
+extension UIApplication {
+    // Static: Instance oluşturmadan direkt olarak property'e erişme. (Static: Hafızada yeri belli olan)
+    static var window: UIWindow? {
+        return (UIApplication.shared.delegate as? AppDelegate)?.window
+    }
+    
+    // AppDelegate'deki window'a window set etmek için
+    static func setWindow(_ window: UIWindow) {
+        (UIApplication.shared.delegate as? AppDelegate)?.window = window
+    }
+}

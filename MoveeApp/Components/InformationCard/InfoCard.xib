@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontsFree-Net-SFProDisplay-Black (1).ttf">
+            <string>SFProDisplay-Black</string>
+        </array>
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoCard" customModule="MoveeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="dateIcon" destination="u8F-jR-00a" id="rVF-J4-yae"/>
+                <outlet property="genreIds" destination="Fsx-f1-FDb" id="Hk0-94-BfV"/>
+                <outlet property="originalTitle" destination="pjm-zl-X5V" id="B7d-Gb-idZ"/>
+                <outlet property="posterImage" destination="yMV-O5-YeS" id="70O-Yx-gze"/>
+                <outlet property="releaseDate" destination="o1E-bT-0g2" id="n2q-wo-vpH"/>
+                <outlet property="starIcon" destination="mF4-cm-fI8" id="dfe-QA-BOA"/>
+                <outlet property="voteAverage" destination="qgL-gC-dTq" id="CxQ-FK-rLL"/>
+                <outlet property="voteAverageView" destination="iIB-gN-Reu" id="4bn-BF-Egy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yMV-O5-YeS">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="FlH-fq-7ye"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsx-f1-FDb">
+                    <rect key="frame" x="80" y="39" width="34.666666666666657" height="18"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1E-bT-0g2">
+                    <rect key="frame" x="100" y="68" width="34.666666666666657" height="14"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIB-gN-Reu">
+                    <rect key="frame" x="144.66666666666666" y="64" width="55" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-gC-dTq">
+                            <rect key="frame" x="28" y="5" width="27" height="12"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="mF4-cm-fI8">
+                            <rect key="frame" x="10" y="5" width="13" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="Hdq-1A-aKX"/>
+                                <constraint firstAttribute="width" constant="13" id="XpI-Tq-81u"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="8V7-og-8mK"/>
+                        <constraint firstAttribute="width" secondItem="iIB-gN-Reu" secondAttribute="height" multiplier="55:22" id="GAh-p5-oZR"/>
+                        <constraint firstItem="qgL-gC-dTq" firstAttribute="top" secondItem="iIB-gN-Reu" secondAttribute="top" constant="5" id="R6c-ev-OaX"/>
+                        <constraint firstItem="mF4-cm-fI8" firstAttribute="leading" secondItem="iIB-gN-Reu" secondAttribute="leading" constant="10" id="VXK-Vs-4h7"/>
+                        <constraint firstItem="qgL-gC-dTq" firstAttribute="leading" secondItem="mF4-cm-fI8" secondAttribute="trailing" constant="5" id="svO-mR-LIA"/>
+                        <constraint firstItem="mF4-cm-fI8" firstAttribute="top" secondItem="iIB-gN-Reu" secondAttribute="top" constant="5" id="yZB-qw-tUR"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u8F-jR-00a">
+                    <rect key="frame" x="80" y="67" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="u8F-jR-00a" secondAttribute="height" multiplier="1:1" id="g9r-aR-lyh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjm-zl-X5V">
+                    <rect key="frame" x="80" y="10" width="50" height="24"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yMV-O5-YeS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0p6-Wf-yp3"/>
+                <constraint firstItem="o1E-bT-0g2" firstAttribute="leading" secondItem="u8F-jR-00a" secondAttribute="trailing" constant="5" id="7MI-1j-5Ju"/>
+                <constraint firstItem="u8F-jR-00a" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="15:100" id="7zc-lU-Ca8"/>
+                <constraint firstItem="iIB-gN-Reu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="AAk-4F-Kfv"/>
+                <constraint firstItem="Fsx-f1-FDb" firstAttribute="top" secondItem="pjm-zl-X5V" secondAttribute="bottom" constant="5" id="F5K-cf-hl7"/>
+                <constraint firstItem="Fsx-f1-FDb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="18:100" id="JbI-E2-oH2"/>
+                <constraint firstItem="pjm-zl-X5V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Omh-fS-jYq"/>
+                <constraint firstItem="u8F-jR-00a" firstAttribute="leading" secondItem="yMV-O5-YeS" secondAttribute="trailing" constant="10" id="RTH-ev-tdt"/>
+                <constraint firstItem="o1E-bT-0g2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="14:100" id="Wtl-59-QMP"/>
+                <constraint firstItem="u8F-jR-00a" firstAttribute="top" secondItem="Fsx-f1-FDb" secondAttribute="bottom" constant="10" id="XgG-Oz-SgX"/>
+                <constraint firstItem="iIB-gN-Reu" firstAttribute="leading" secondItem="o1E-bT-0g2" secondAttribute="trailing" constant="10" id="Y5g-Yn-tIp"/>
+                <constraint firstItem="pjm-zl-X5V" firstAttribute="leading" secondItem="yMV-O5-YeS" secondAttribute="trailing" constant="10" id="baE-9d-pNo"/>
+                <constraint firstItem="Fsx-f1-FDb" firstAttribute="leading" secondItem="yMV-O5-YeS" secondAttribute="trailing" constant="10" id="dvZ-0r-LHa"/>
+                <constraint firstItem="yMV-O5-YeS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="7:10" id="j2y-sJ-Sfe"/>
+                <constraint firstItem="yMV-O5-YeS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sG9-Un-hcc"/>
+                <constraint firstItem="o1E-bT-0g2" firstAttribute="top" secondItem="Fsx-f1-FDb" secondAttribute="bottom" constant="11" id="suX-fP-CaM"/>
+                <constraint firstItem="pjm-zl-X5V" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="24:100" id="tK8-Va-4o9"/>
+                <constraint firstAttribute="bottom" secondItem="yMV-O5-YeS" secondAttribute="bottom" id="ypk-xv-3Rr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-25.384615384615383" y="15.639810426540283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star" width="13" height="13"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
